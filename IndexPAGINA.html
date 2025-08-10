@@ -1,0 +1,238 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="es">\
+<head>\
+  <meta charset="UTF-8" />\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
+  <title>Portafolio | Santiago Londo\'f1o</title>\
+\
+  <!-- Google Fonts -->\
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">\
+\
+  <!-- Font Awesome -->\
+  <script src="https://kit.fontawesome.com/a2e0e6a64f.js" crossorigin="anonymous"></script>\
+\
+  <style>\
+    :root \{\
+      --color-primary: #0d6efd;\
+      --color-bg: #f7f9fc;\
+      --color-dark: #222;\
+      --transition: 0.3s ease;\
+    \}\
+\
+    body \{\
+      margin: 0;\
+      font-family: 'Poppins', sans-serif;\
+      background: var(--color-bg);\
+      color: var(--color-dark);\
+    \}\
+\
+    header \{\
+      background: var(--color-primary);\
+      color: white;\
+      padding: 2.5rem 1rem;\
+      text-align: center;\
+    \}\
+    header h1 \{\
+      margin: 0;\
+      font-size: 2rem;\
+      animation: fadeInDown 1s ease;\
+    \}\
+    header p \{\
+      margin-top: 0.5rem;\
+      animation: fadeInUp 1s ease;\
+    \}\
+\
+    nav \{\
+      margin-top: 1rem;\
+      animation: fadeInUp 1.2s ease;\
+    \}\
+    nav a \{\
+      color: white;\
+      text-decoration: none;\
+      margin: 0 12px;\
+      font-weight: 600;\
+      transition: var(--transition);\
+    \}\
+    nav a:hover \{\
+      color: #ffc107;\
+    \}\
+\
+    section \{\
+      max-width: 1100px;\
+      margin: 3rem auto;\
+      padding: 0 1.5rem;\
+    \}\
+    h2 \{\
+      color: var(--color-primary);\
+      border-bottom: 3px solid var(--color-primary);\
+      padding-bottom: 5px;\
+      margin-bottom: 1rem;\
+      font-size: 1.8rem;\
+    \}\
+\
+    /* Skills */\
+    .skills \{\
+      display: flex;\
+      flex-wrap: wrap;\
+      gap: 12px;\
+    \}\
+    .skill \{\
+      background: white;\
+      padding: 10px 15px;\
+      border-radius: 25px;\
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);\
+      font-size: 14px;\
+      display: flex;\
+      align-items: center;\
+      gap: 8px;\
+      transition: var(--transition);\
+    \}\
+    .skill:hover \{\
+      background: var(--color-primary);\
+      color: white;\
+      transform: scale(1.05);\
+    \}\
+\
+    /* Projects */\
+    .projects \{\
+      display: grid;\
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\
+      gap: 1.5rem;\
+    \}\
+    .project \{\
+      background: white;\
+      padding: 1rem;\
+      border-radius: 10px;\
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);\
+      transition: var(--transition);\
+    \}\
+    .project:hover \{\
+      transform: translateY(-5px);\
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);\
+    \}\
+    .project h3 \{\
+      margin-top: 0;\
+      font-size: 1.2rem;\
+      color: var(--color-primary);\
+    \}\
+    .project p \{\
+      font-size: 0.95rem;\
+    \}\
+\
+    /* Contact Form */\
+    form \{\
+      background: white;\
+      padding: 1.5rem;\
+      border-radius: 8px;\
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);\
+      max-width: 500px;\
+      margin: auto;\
+    \}\
+    form input, form textarea \{\
+      width: 100%;\
+      padding: 10px;\
+      margin: 0.5rem 0;\
+      border: 1px solid #ddd;\
+      border-radius: 5px;\
+      font-family: inherit;\
+    \}\
+    form button \{\
+      background: var(--color-primary);\
+      color: white;\
+      padding: 10px 20px;\
+      border: none;\
+      border-radius: 5px;\
+      cursor: pointer;\
+      transition: var(--transition);\
+    \}\
+    form button:hover \{\
+      background: #084298;\
+    \}\
+\
+    footer \{\
+      background: var(--color-primary);\
+      color: white;\
+      text-align: center;\
+      padding: 1rem;\
+      margin-top: 3rem;\
+    \}\
+\
+    /* Animations */\
+    @keyframes fadeInDown \{\
+      from \{ opacity: 0; transform: translateY(-20px); \}\
+      to \{ opacity: 1; transform: translateY(0); \}\
+    \}\
+    @keyframes fadeInUp \{\
+      from \{ opacity: 0; transform: translateY(20px); \}\
+      to \{ opacity: 1; transform: translateY(0); \}\
+    \}\
+  </style>\
+</head>\
+<body>\
+\
+  <header>\
+    <h1>Santiago Londo\'f1o</h1>\
+    <p><i class="fas fa-chart-line"></i> Analista de Datos | Automatizaci\'f3n de Procesos</p>\
+    <nav>\
+      <a href="#habilidades">Habilidades</a>\
+      <a href="#proyectos">Proyectos</a>\
+      <a href="#contacto">Contacto</a>\
+    </nav>\
+  </header>\
+\
+  <section id="habilidades">\
+    <h2>Habilidades</h2>\
+    <div class="skills">\
+      <div class="skill"><i class="fas fa-robot"></i> N8N</div>\
+      <div class="skill"><i class="fas fa-code"></i> Google App Script</div>\
+      <div class="skill"><i class="fas fa-chart-bar"></i> Power BI</div>\
+      <div class="skill"><i class="fas fa-file-excel"></i> Excel</div>\
+      <div class="skill"><i class="fas fa-table"></i> Google Sheets</div>\
+      <div class="skill"><i class="fas fa-database"></i> SQL</div>\
+      <div class="skill"><i class="fas fa-cloud"></i> Airtable</div>\
+      <div class="skill"><i class="fas fa-link"></i> Zapier</div>\
+    </div>\
+  </section>\
+\
+  <section id="proyectos">\
+    <h2>Proyectos</h2>\
+    <div class="projects">\
+      <div class="project">\
+        <h3><i class="fas fa-cogs"></i> Automatizaci\'f3n con N8N</h3>\
+        <p>Creaci\'f3n de flujos automatizados para integrar datos entre Google Sheets y Airtable, reduciendo tiempos de proceso en un 70%.</p>\
+      </div>\
+      <div class="project">\
+        <h3><i class="fas fa-chart-pie"></i> Dashboard en Power BI</h3>\
+        <p>Dise\'f1o de visualizaci\'f3n interactiva de KPIs con conexi\'f3n en vivo a bases de datos SQL y actualizaciones autom\'e1ticas.</p>\
+      </div>\
+      <div class="project">\
+        <h3><i class="fas fa-code"></i> Google App Script</h3>\
+        <p>Desarrollo de scripts personalizados para automatizar reportes y env\'edos de correo masivos con datos din\'e1micos.</p>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <section id="contacto">\
+    <h2>Contacto</h2>\
+    <form action="https://formspree.io/f/tu_codigo_aqui" method="POST">\
+      <input type="text" name="name" placeholder="Tu nombre" required>\
+      <input type="email" name="_replyto" placeholder="Tu correo" required>\
+      <textarea name="message" placeholder="Escribe tu mensaje" rows="5" required></textarea>\
+      <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>\
+    </form>\
+  </section>\
+\
+  <footer>\
+    <p>\'a9 2025 Santiago Londo\'f1o - Analista de Datos</p>\
+  </footer>\
+\
+</body>\
+</html>\
+}
