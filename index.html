@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio — Santiago Londoño | Analista de Datos</title>
+  <meta name="description" content="Portafolio profesional de Santiago Londoño — Analista de datos. N8N, Google Apps Script, Power BI, Excel, SQL, Airtable, Zapier." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="topnav" aria-label="Secciones">
+      <a href="#about" class="active">Inicio</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#testimonials">Testimonios</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-card intro">
+        <h1>Santiago Londoño</h1>
+        <p class="lead">Analista de Datos — Automatización & Dashboards. Ayudo a equipos a tomar decisiones con datos, automatizar procesos y ahorrar tiempo.</p>
+        <div class="badges">
+          <div class="badge">N8N</div>
+          <div class="badge">Google Apps Script</div>
+          <div class="badge">Power BI</div>
+          <div class="badge">Excel</div>
+          <div class="badge">SQL</div>
+          <div class="badge">Airtable</div>
+          <div class="badge">Zapier</div>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><strong id="counter-projects">0</strong><small>Proyectos</small></div>
+          <div class="stat"><strong id="counter-hours">0</strong><small>Horas</small></div>
+          <div class="stat"><strong id="counter-clients">0</strong><small>Clientes</small></div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn" href="#contact"><i class="fa-solid fa-paper-plane"></i>&nbsp;Contactar</a>
+          <a class="btn" id="download-cv" href="#">Descargar CV</a>
+        </div>
+      </div>
+
+      <aside class="hero-card profile">
+        <img class="avatar" src="assets/avatar.jpg" alt="Santiago Londoño">
+        <h3>Santiago Londoño</h3>
+        <p>Analista de Datos • Automatización • Visualización</p>
+        <p class="muted">Bogotá, Colombia • Disponible para proyectos remotos</p>
+      </aside>
+    </header>
+
+    <section id="skills">
+      <h2>Habilidades técnicas</h2>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <div class="icon-col"><i class="fa-solid fa-robot fa-2x accent"></i></div>
+          <div class="skill-info">
+            <div class="title-row"><strong>N8N & Zapier</strong><span class="muted">Automatizaciones</span></div>
+            <div class="progress" data-value="90"><span></span></div>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="icon-col"><i class="fa-solid fa-code fa-2x"></i></div>
+          <div class="skill-info">
+            <div class="title-row"><strong>Google Apps Script</strong><span class="muted">Automatización de Google Sheets</span></div>
+            <div class="progress" data-value="85"><span></span></div>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <div class="icon-col"><i class="fa-solid fa-chart-pie fa-2x"></i></div>
+          <div class="skill-info">
+            <div class="title-row"><strong>Power BI</strong><span class="muted">Dashboards</span></div>
+            <div class="progress" data-value="88"><span></span></div>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <div class="icon-col"><i class="fa-solid fa-file-excel fa-2x"></i></div>
+          <div class="skill-info">
+            <div class="title-row"><strong>Excel & Google Sheets</strong><span class="muted">Modelado & Macros</span></div>
+            <div class="progress" data-value="92"><span></span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Proyectos destacados</h2>
+
+      <div class="filters" role="tablist">
+        <button class="filter active" data-filter="all">Todos</button>
+        <button class="filter" data-filter="automation">Automatización</button>
+        <button class="filter" data-filter="dashboards">Dashboards</button>
+        <button class="filter" data-filter="scripts">Scripts</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <article class="proj" data-tags="automation scripts" data-title="Integración Google Sheets → Airtable" data-desc="Diseñé un flujo que sincroniza órdenes entre Google Sheets y Airtable con validaciones y manejo de errores. Resultado: reducción de 80% en trabajo manual" data-image="assets/project1.jpg">
+          <img alt="project image" src="assets/project1.jpg">
+          <div class="meta"><h3>Integración Google Sheets → Airtable</h3><p class="muted">Automatización y sincronización de datos entre herramientas.</p></div>
+        </article>
+
+        <article class="proj" data-tags="dashboards" data-title="Dashboard Comercial Power BI" data-desc="Dashboard con KPIs de ventas, segmentación y forecast. Conexión directa a SQL y actualización diaria." data-image="assets/project2.jpg">
+          <img alt="project image" src="assets/project2.jpg">
+          <div class="meta"><h3>Dashboard Comercial Power BI</h3><p class="muted">KPIs en tiempo real para equipos de ventas.</p></div>
+        </article>
+
+        <article class="proj" data-tags="scripts automation" data-title="Reportes automatizados con GAS" data-desc="Scripts que generan reportes semanales y envían correos personalizados usando plantillas dinámicas." data-image="assets/project3.jpg">
+          <img alt="project image" src="assets/project3.jpg">
+          <div class="meta"><h3>Reportes automatizados con GAS</h3><p class="muted">Automatización de informes y envíos programados.</p></div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>Testimonios</h2>
+      <div class="testi">
+        <div class="track" id="testi-track">
+          <div class="item"><strong>María G. — Gerente</strong><p class="muted">"Santiago nos ayudó a automatizar procesos críticos; los resultados fueron inmediatamente visibles."</p></div>
+          <div class="item"><strong>Carlos R. — CEO</strong><p class="muted">"Entrega impecable y comunicación clara. Recomendado para proyectos de datos y automatización."</p></div>
+          <div class="item"><strong>Laura P. — Analista</strong><p class="muted">"Sus dashboards facilitaron la toma de decisiones en nuestro equipo."</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <div class="contact-grid">
+        <div>
+          <p class="muted">¿Tienes un proyecto? Cuéntame brevemente y te envío una propuesta inicial.</p>
+
+          <div class="info-block">
+            <div class="success" id="lead-box">Disponible para proyectos remotos • Respondo en 24h</div>
+            <div class="cta-small">
+              <a class="btn" href="mailto:tuemail@example.com"><i class="fa-solid fa-envelope"></i>&nbsp;Enviar correo</a>
+              <a class="btn" href="https://wa.me/573000000000?text=Hola%20Santiago%2C%20vi%20tu%20portafolio" target="_blank"><i class="fa-brands fa-whatsapp"></i>&nbsp;WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="services muted">
+            <strong>Servicios:</strong>
+            <ul>
+              <li>Automatización entre herramientas (N8N, Zapier)</li>
+              <li>Dashboards y visualización (Power BI)</li>
+              <li>Scripts y reporting (Google Apps Script)</li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="contact" id="contact-form">
+          <input name="name" placeholder="Nombre" required>
+          <input name="email" type="email" placeholder="Correo" required>
+          <input name="company" placeholder="Empresa / Proyecto (opcional)">
+          <textarea name="message" rows="5" placeholder="Cuéntame sobre el proyecto" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i>&nbsp;Enviar mensaje</button>
+            <button type="button" class="btn ghost" id="save-lead">Guardar contacto</button>
+          </div>
+          <div id="form-result" class="muted"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <small>© 2025 Santiago Londoño — Analista de Datos • <a href="#" class="muted">LinkedIn</a> • <a href="#" class="muted">Upwork</a></small>
+    </footer>
+  </div>
+
+  <!-- Modal (project details) -->
+  <div class="modal" id="modal">
+    <div class="modal-inner">
+      <span class="close" id="modal-close"><i class="fa-solid fa-xmark fa-lg"></i></span>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
